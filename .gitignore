@@ -1,0 +1,13 @@
+# Upstream clones built by build-cuda*.bat (nested git repos)
+/llama.cpp/
+/llama.cpp-prism/
+
+# Model weights (~7.4 GB)
+/models/
+*.gguf
+
+# Runtime output
+/logs/
+/scratch-*/
+__pycache__/
+.pytest_cache/

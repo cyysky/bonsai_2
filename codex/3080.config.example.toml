@@ -1,0 +1,12 @@
+model = "bonsai2-27b"
+model_provider = "fmcv"
+model_context_window = 32768
+# Bonsai 2 accepts xhigh/medium/low only, and the local server maps
+# none/minimal to low. Low keeps thinking short, which matters at ~50 tok/s.
+model_reasoning_effort = "low"
+
+[model_providers.fmcv]
+name = "FMCV"
+base_url = "http://localhost:8080/v1"
+experimental_bearer_token = "<your-token>"
+wire_api = "responses"
